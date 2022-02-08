@@ -1,6 +1,6 @@
 layout: page
 title: "James Millan"
-permalink: /about
+permalink: /index
 
 # James Millan
 2nd year **computer science** undergraduate at University of Bristol
