@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "James Millan"
+title: James Millan
 permalink: /index
 ---
 # James Millan
