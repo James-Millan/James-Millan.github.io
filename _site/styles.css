@@ -11,8 +11,8 @@ nav {
     height: 100px;
 }
 
-body    {
-    margin-top: 100px;
+.body    {
+    margin-top: 100px !important;
 }
 
 .styled-table {
