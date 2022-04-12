@@ -1,0 +1,48 @@
+#title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+#quote-box  {
+    background-color: white;
+    transition: background .8s;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left:  auto;
+    margin-top: 100px;
+    height: 250px;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+
+#footer {
+    text-align: center;
+    margin-right: auto;
+    margin-left:  auto;
+    margin-top: 10px;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+#text {
+    padding: 10px 15px;
+}
+#text, #author{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Times New Roman, sans-serif;
+}
+a {
+    height: 200px;
+    width : 200px;
+}
+#text-wrapper {
+    height: 200px;
+    width: 920px;
+}
