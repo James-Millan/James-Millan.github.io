@@ -215,12 +215,17 @@ function getQuote() {
 function changeQuote()  {
     let quoteArr = getQuote();
     let tweet = quoteArr[0].replace(" ", "%20");
-    let originalColor = $("#quote-box").css("background-color");
-    let random = Math.floor(Math.random() * colours.length)
-    while (originalColor === colours[random])   {
+    //attributed to Erick Petrucelli on stack overflow
+    let rgb2hex = (originalColor) => `#${originalColor.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1)
+        .map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`;
+    //end of code attribution
+    let colorHex = rgb2hex($("#quote-box").css("background-color"));
+    console.log(colorHex);
+    let random = Math.floor(Math.random() * colours.length);
+    console.log(colours[random].toLowerCase());
+    while (colorHex === colours[random].toLowerCase())   {
         random = Math.floor(Math.random() * colours.length);
     }
-
     let color = colours[random];
     $("#text").text("\"" + quoteArr[0] + "\"");
     $("#author").text("- " + quoteArr[1]);
