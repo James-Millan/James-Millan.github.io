@@ -64,6 +64,7 @@ a:active { text-decoration: none; }
 
 .myBtn {
     color: white;
+    cursor: pointer;
     background-color: #000C66;
     margin-top: 20px;
     padding: 16px;
