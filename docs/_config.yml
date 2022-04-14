@@ -24,6 +24,7 @@ email: nf20792@bristol.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   My name is James Millan and I am a second year undergraduate Computer Science student at the University of Bristol.
   Here you can find my personal projects as well as the modules I have taken and some other bits and pieces!
+baseurl: "/James-Millan.github.io"
 twitter_username: j4rrow
 github_username:  James-Millan
 
