@@ -84,3 +84,11 @@ a:active { text-decoration: none; }
     padding: 10px;
     color: #000C66;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container div {
+    margin: 10px;
+}
