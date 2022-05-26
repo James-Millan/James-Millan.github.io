@@ -30,17 +30,17 @@
 
     <form id="calculation" action="#" onsubmit="calculate();return false">
         <label for="gender">Gender</label>
-        <select id="gender" name="gender">
+        <select id="gender" class="formInput" name="gender">
             <option value="M">Male</option>
             <option value="F">Female</option>
         </select>
 
         <label for="height"></label>
-        <input type="text" name="height" id="height" placeholder="Height (cm)" required>
+        <input type="text" name="height" class="formInput" id="height" placeholder="Height (cm)" required>
         <label for="weight"></label>
-        <input type="text" name="weight" id="weight" placeholder="Weight (kg)" required>
+        <input type="text" name="weight" id="weight" class="formInput" placeholder="Weight (kg)" required>
         <label for="age"></label>
-        <input type="text" name="age" id="age" placeholder="Age (years)" required>
+        <input type="text" name="age" class="formInput" id="age" placeholder="Age (years)" required>
         <button type="submit">Calculate!</button>
     </form>
     <div>
