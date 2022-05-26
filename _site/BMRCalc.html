@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/3322617c5e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script href="script.js"></script>
+    <title>BMR Calculator</title>
+</head>
+
+<nav>
+    <a href="/index.html"><button class="myBtn">Home</button></a>
+    <a href="/projects.html"><button class="myBtn">Projects</button></a>
+    <a href="/modules.html"><button class="myBtn">Modules</button></a>
+    <a href="/fitness.html"><button class="myBtn">Fitness</button></a>
+    <div class="icons">
+        <a class="icon" href="https://www.linkedin.com/in/james-millan23" target='_blank' rel='noopener'>
+            <i class="fa-brands fa-3x fa-linkedin"></i>
+        </a>
+        <a class="icon" href="https://github.com/James-Millan/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-3x fa-github-square"></i>
+        </a>
+        <a class="icon" href="mailto:nf20792@bristol.ac.uk" target="_blank" rel="noopener">
+            <i class="fa fa-envelope fa-3x"></i>
+        </a>
+    </div>
+</nav>
+<body class="body">
+    <h1 class="title">Basal Metabolic Rate Calculator</h1>
+
+    <form id="calculation" action="#" onsubmit="calculate();return false">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+
+        <label for="height"></label>
+        <input type="text" name="height" id="height" placeholder="Height (cm)" required>
+        <label for="weight"></label>
+        <input type="text" name="weight" id="weight" placeholder="Weight (kg)" required>
+        <label for="age"></label>
+        <input type="text" name="age" id="age" placeholder="Age (years)" required>
+        <button type="submit">Calculate!</button>
+    </form>
+    <div>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculate()    {
+
+            let result = 0;
+            console.log(result)
+            let gender = document.getElementById("gender").value;
+            let weight = Number(document.getElementById("weight").value);
+            let height = Number(document.getElementById("height").value);
+            let age = Number(document.getElementById("age").value);
+            console.log(typeof weight);
+            if(gender === "M")    {
+                let s1 = (13.397 * weight);
+                let s2 = (4.799 * height);
+                let s3 = (5.677 * age);
+
+                result = 88.362 + s1 + s2 - s3;
+                result = Math.ceil(result);
+            }
+            else    {
+                let s1 = (9.247 * weight);
+                let s2 = (3.098 * height);
+                let s3 = (4.330 * age);
+                result = 447.593 + s1 + s2 - s3;
+                result = Math.ceil(result);
+            }
+            if(result < 0)  {
+                document.getElementById("result").innerText = "You've put in some dodgy numbers mate. Please try again :)"
+            }
+            else    {
+                let calories = result.toString();
+                document.getElementById("result").innerText = "Your BMR is: " + calories + " Calories";
+            }
+
+
+        }
+    </script>
+</body>
+</html>
