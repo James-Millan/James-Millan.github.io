@@ -92,7 +92,7 @@ a:active { text-decoration: none; }
 .flex-container div {
     margin: 10px;
 }
-input[type=text], select{
+.formInput{
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -102,7 +102,7 @@ input[type=text], select{
     box-sizing: border-box;
 }
 
-button[type=submit]  {
+#formSubmit  {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;

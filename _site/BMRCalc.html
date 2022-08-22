@@ -30,17 +30,17 @@
 
     <form id="calculation" action="#" onsubmit="calculate();return false">
         <label for="gender">Gender</label>
-        <select id="gender" name="gender">
+        <select id="gender" class="formInput" name="gender">
             <option value="M">Male</option>
             <option value="F">Female</option>
         </select>
 
         <label for="height"></label>
-        <input type="text" name="height" id="height" placeholder="Height (cm)" required>
+        <input type="text" name="height" class="formInput" id="height" placeholder="Height (cm)" required>
         <label for="weight"></label>
-        <input type="text" name="weight" id="weight" placeholder="Weight (kg)" required>
+        <input type="text" name="weight" id="weight" class="formInput" placeholder="Weight (kg)" required>
         <label for="age"></label>
-        <input type="text" name="age" id="age" placeholder="Age (years)" required>
+        <input type="text" name="age" class="formInput" id="age" placeholder="Age (years)" required>
         <button type="submit">Calculate!</button>
     </form>
     <div>
@@ -49,19 +49,15 @@
 
     <script>
         function calculate()    {
-
             let result = 0;
-            console.log(result)
             let gender = document.getElementById("gender").value;
             let weight = Number(document.getElementById("weight").value);
             let height = Number(document.getElementById("height").value);
             let age = Number(document.getElementById("age").value);
-            console.log(typeof weight);
             if(gender === "M")    {
                 let s1 = (13.397 * weight);
                 let s2 = (4.799 * height);
                 let s3 = (5.677 * age);
-
                 result = 88.362 + s1 + s2 - s3;
                 result = Math.ceil(result);
             }
